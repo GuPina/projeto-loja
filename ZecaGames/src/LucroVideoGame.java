@@ -1,7 +1,7 @@
 import java.text.DecimalFormat;
 
-public class LucroVideoGame {
-private static final DecimalFormat df = new DecimalFormat("0.00");
+class LucroVideoGame {
+    private static final DecimalFormat df = new DecimalFormat("0.00");
 
     public static void exibirSugestoes(VideoGame videoGame) {
         System.out.println("\nSugestão de preços de venda para Video Game:");
