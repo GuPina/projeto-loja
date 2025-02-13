@@ -1,3 +1,4 @@
+
 import java.text.DecimalFormat;
 
 class LucroVideoGame {
@@ -13,6 +14,8 @@ class LucroVideoGame {
 
     public static void calcularLucroPersonalizado(VideoGame videoGame, double precoVenda) {
         double lucro = ((precoVenda - videoGame.getValorTotal()) / videoGame.getValorTotal()) * 100;
+        System.out.println("Valor pago: R$ " + df.format(videoGame.getValorTotal()));
+        System.out.println("Valor de venda desejado: R$ " + df.format(precoVenda));
         System.out.println("Lucro de " + df.format(lucro) + "%");
     }
 }

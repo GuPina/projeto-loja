@@ -1,3 +1,4 @@
+
 class VideoGame {
     private String nome;
     private String marca;
@@ -15,7 +16,39 @@ class VideoGame {
         this.valorTotal = valorTotal;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public String getArmazenamento() {
+        return armazenamento;
+    }
+
+    public boolean isPossuiControle() {
+        return possuiControle;
+    }
+
+    public boolean isPossuiDefeito() {
+        return possuiDefeito;
+    }
+
     public double getValorTotal() {
         return valorTotal;
+    }
+
+    @Override
+    public String toString() {
+        return "VideoGame{" +
+                "nome='" + nome + '\'' +
+                ", marca='" + marca + '\'' +
+                ", armazenamento='" + armazenamento + '\'' +
+                ", possuiControle=" + possuiControle +
+                ", possuiDefeito=" + possuiDefeito +
+                ", valorTotal=" + valorTotal +
+                '}';
     }
 }
